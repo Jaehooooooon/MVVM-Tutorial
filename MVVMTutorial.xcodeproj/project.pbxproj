@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3873C8B5241E48D40046D5E3 /* GameLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8B4241E48D40046D5E3 /* GameLibrary.swift */; };
+		3873C8B7241E48F50046D5E3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8B6241E48F50046D5E3 /* Game.swift */; };
+		3873C8B9241E49140046D5E3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8B8241E49140046D5E3 /* Player.swift */; };
+		3873C8BB241E49250046D5E3 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8BA241E49250046D5E3 /* Team.swift */; };
+		3873C8BD241E496F0046D5E3 /* InMemoryGameLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8BC241E496F0046D5E3 /* InMemoryGameLibrary.swift */; };
+		3873C8BF241E49B60046D5E3 /* UIStoryboard+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8BE241E49B60046D5E3 /* UIStoryboard+Loader.swift */; };
+		3873C8C2241E4A070046D5E3 /* GameScoreboardEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8C1241E4A070046D5E3 /* GameScoreboardEditorViewController.swift */; };
+		3873C8C4241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8C3241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift */; };
+		3873C8C6241E4B710046D5E3 /* UINib+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8C5241E4B710046D5E3 /* UINib+Loader.swift */; };
+		3873C8C8241E4B980046D5E3 /* UIViewController+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8C7241E4B980046D5E3 /* UIViewController+Subview.swift */; };
+		3873C8CA241E4BE20046D5E3 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8C9241E4BE20046D5E3 /* UIColor+Theme.swift */; };
+		3873C8CC241E4C090046D5E3 /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8CB241E4C090046D5E3 /* NSTimer+Closure.swift */; };
 		38AB1B3A241D132F00FB2CE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AB1B39241D132F00FB2CE7 /* AppDelegate.swift */; };
 		38AB1B3C241D132F00FB2CE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AB1B3B241D132F00FB2CE7 /* SceneDelegate.swift */; };
 		38AB1B41241D132F00FB2CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AB1B3F241D132F00FB2CE7 /* Main.storyboard */; };
@@ -36,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3873C8B4241E48D40046D5E3 /* GameLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLibrary.swift; sourceTree = "<group>"; };
+		3873C8B6241E48F50046D5E3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3873C8B8241E49140046D5E3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3873C8BA241E49250046D5E3 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		3873C8BC241E496F0046D5E3 /* InMemoryGameLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryGameLibrary.swift; sourceTree = "<group>"; };
+		3873C8BE241E49B60046D5E3 /* UIStoryboard+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Loader.swift"; sourceTree = "<group>"; };
+		3873C8C1241E4A070046D5E3 /* GameScoreboardEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreboardEditorViewController.swift; sourceTree = "<group>"; };
+		3873C8C3241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreboardMoveEditorView.swift; sourceTree = "<group>"; };
+		3873C8C5241E4B710046D5E3 /* UINib+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Loader.swift"; sourceTree = "<group>"; };
+		3873C8C7241E4B980046D5E3 /* UIViewController+Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Subview.swift"; sourceTree = "<group>"; };
+		3873C8C9241E4BE20046D5E3 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		3873C8CB241E4C090046D5E3 /* NSTimer+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTimer+Closure.swift"; sourceTree = "<group>"; };
 		38AB1B36241D132F00FB2CE7 /* MVVMTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AB1B39241D132F00FB2CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38AB1B3B241D132F00FB2CE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3873C8C0241E49ED0046D5E3 /* GameScoreboardEditor */ = {
+			isa = PBXGroup;
+			children = (
+				3873C8C1241E4A070046D5E3 /* GameScoreboardEditorViewController.swift */,
+				3873C8C3241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift */,
+			);
+			path = GameScoreboardEditor;
+			sourceTree = "<group>";
+		};
 		38AB1B2D241D132F00FB2CE7 = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +140,8 @@
 				38AB1B6C241D144E00FB2CE7 /* HomeViewController.swift */,
 				38AB1B47241D133200FB2CE7 /* LaunchScreen.storyboard */,
 				38AB1B4A241D133200FB2CE7 /* Info.plist */,
-				38AB1B75241D1D2000FB2CE7 /* View */,
 				38AB1B6E241D148900FB2CE7 /* Model */,
+				38AB1B75241D1D2000FB2CE7 /* View */,
 				38AB1B70241D149C00FB2CE7 /* ViewModel */,
 				38AB1B71241D14AD00FB2CE7 /* Services */,
 				38AB1B72241D1B3A00FB2CE7 /* Extensions */,
@@ -138,6 +171,9 @@
 		38AB1B6E241D148900FB2CE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3873C8B6241E48F50046D5E3 /* Game.swift */,
+				3873C8B8241E49140046D5E3 /* Player.swift */,
+				3873C8BA241E49250046D5E3 /* Team.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +188,8 @@
 		38AB1B71241D14AD00FB2CE7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3873C8B4241E48D40046D5E3 /* GameLibrary.swift */,
+				3873C8BC241E496F0046D5E3 /* InMemoryGameLibrary.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -159,6 +197,11 @@
 		38AB1B72241D1B3A00FB2CE7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3873C8BE241E49B60046D5E3 /* UIStoryboard+Loader.swift */,
+				3873C8C5241E4B710046D5E3 /* UINib+Loader.swift */,
+				3873C8C7241E4B980046D5E3 /* UIViewController+Subview.swift */,
+				3873C8C9241E4BE20046D5E3 /* UIColor+Theme.swift */,
+				3873C8CB241E4C090046D5E3 /* NSTimer+Closure.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				38AB1B3F241D132F00FB2CE7 /* Main.storyboard */,
+				3873C8C0241E49ED0046D5E3 /* GameScoreboardEditor */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,8 +346,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3873C8CA241E4BE20046D5E3 /* UIColor+Theme.swift in Sources */,
+				3873C8C8241E4B980046D5E3 /* UIViewController+Subview.swift in Sources */,
 				38AB1B3A241D132F00FB2CE7 /* AppDelegate.swift in Sources */,
+				3873C8C4241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift in Sources */,
+				3873C8B7241E48F50046D5E3 /* Game.swift in Sources */,
+				3873C8C6241E4B710046D5E3 /* UINib+Loader.swift in Sources */,
+				3873C8BD241E496F0046D5E3 /* InMemoryGameLibrary.swift in Sources */,
+				3873C8C2241E4A070046D5E3 /* GameScoreboardEditorViewController.swift in Sources */,
+				3873C8B5241E48D40046D5E3 /* GameLibrary.swift in Sources */,
 				38AB1B3C241D132F00FB2CE7 /* SceneDelegate.swift in Sources */,
+				3873C8CC241E4C090046D5E3 /* NSTimer+Closure.swift in Sources */,
+				3873C8BF241E49B60046D5E3 /* UIStoryboard+Loader.swift in Sources */,
+				3873C8BB241E49250046D5E3 /* Team.swift in Sources */,
+				3873C8B9241E49140046D5E3 /* Player.swift in Sources */,
 				38AB1B44241D132F00FB2CE7 /* MVVMTutorial.xcdatamodeld in Sources */,
 				38AB1B6D241D144E00FB2CE7 /* HomeViewController.swift in Sources */,
 			);
