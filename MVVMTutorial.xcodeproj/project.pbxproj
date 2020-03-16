@@ -29,6 +29,8 @@
 		38AB1B54241D133200FB2CE7 /* MVVMTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AB1B53241D133200FB2CE7 /* MVVMTutorialTests.swift */; };
 		38AB1B5F241D133200FB2CE7 /* MVVMTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AB1B5E241D133200FB2CE7 /* MVVMTutorialUITests.swift */; };
 		38AB1B6D241D144E00FB2CE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AB1B6C241D144E00FB2CE7 /* HomeViewController.swift */; };
+		38AE6A68241FAEAF00DC7443 /* GameScoreboardEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE6A67241FAEAF00DC7443 /* GameScoreboardEditorViewModel.swift */; };
+		38AE6A6A241FAECE00DC7443 /* GameScoreboardEditorViewModelFromGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE6A69241FAECE00DC7443 /* GameScoreboardEditorViewModelFromGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		38AB1B5E241D133200FB2CE7 /* MVVMTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTutorialUITests.swift; sourceTree = "<group>"; };
 		38AB1B60241D133200FB2CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38AB1B6C241D144E00FB2CE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		38AE6A67241FAEAF00DC7443 /* GameScoreboardEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreboardEditorViewModel.swift; sourceTree = "<group>"; };
+		38AE6A69241FAECE00DC7443 /* GameScoreboardEditorViewModelFromGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreboardEditorViewModelFromGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 		38AB1B70241D149C00FB2CE7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				38AE6A67241FAEAF00DC7443 /* GameScoreboardEditorViewModel.swift */,
+				38AE6A69241FAECE00DC7443 /* GameScoreboardEditorViewModelFromGame.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3873C8CA241E4BE20046D5E3 /* UIColor+Theme.swift in Sources */,
+				38AE6A6A241FAECE00DC7443 /* GameScoreboardEditorViewModelFromGame.swift in Sources */,
 				3873C8C8241E4B980046D5E3 /* UIViewController+Subview.swift in Sources */,
 				38AB1B3A241D132F00FB2CE7 /* AppDelegate.swift in Sources */,
 				3873C8C4241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift in Sources */,
@@ -358,6 +365,7 @@
 				3873C8C6241E4B710046D5E3 /* UINib+Loader.swift in Sources */,
 				3873C8BD241E496F0046D5E3 /* InMemoryGameLibrary.swift in Sources */,
 				3873C8C2241E4A070046D5E3 /* GameScoreboardEditorViewController.swift in Sources */,
+				38AE6A68241FAEAF00DC7443 /* GameScoreboardEditorViewModel.swift in Sources */,
 				3873C8B5241E48D40046D5E3 /* GameLibrary.swift in Sources */,
 				38AB1B3C241D132F00FB2CE7 /* SceneDelegate.swift in Sources */,
 				3873C8CC241E4C090046D5E3 /* NSTimer+Closure.swift in Sources */,

@@ -72,11 +72,11 @@ class PlayerScoreboardMoveEditorView: UIView {
         
         self.backgroundColor = UIColor.playerBackgroundColor
         
-        styleActionButton(onePointButton)
-        styleActionButton(twoPointsButton)
-        styleActionButton(assistButton)
-        styleActionButton(reboundButton)
-        styleActionButton(foulButton)
+//        styleActionButton(onePointButton)
+//        styleActionButton(twoPointsButton)
+//        styleActionButton(assistButton)
+//        styleActionButton(reboundButton)
+//        styleActionButton(foulButton)
     }
     
     fileprivate func styleActionButton(_ button: UIButton) {

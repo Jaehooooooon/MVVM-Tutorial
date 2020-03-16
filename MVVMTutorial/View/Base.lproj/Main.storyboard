@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nef-uW-EoQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -58,7 +58,7 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="LuT-JE-ABa" secondAttribute="trailing" id="0mN-Is-HmO"/>
                                     <constraint firstItem="LuT-JE-ABa" firstAttribute="leading" secondItem="QX5-Iq-5gr" secondAttribute="leading" id="7mN-iX-dSz"/>
@@ -99,7 +99,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Kwh-RX-mrX" firstAttribute="centerX" secondItem="ce8-SP-fMb" secondAttribute="centerX" id="3Vc-i6-th9"/>
                                             <constraint firstAttribute="height" constant="45" id="3dx-fY-RmY"/>
@@ -116,6 +116,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inm-n0-ygd">
                                                 <rect key="frame" x="332" y="7.5" width="42" height="30"/>
                                                 <state key="normal" title="Pause"/>
+                                                <connections>
+                                                    <action selector="pauseButtonPress:" destination="nef-uW-EoQ" eventType="touchUpInside" id="EZq-EQ-m1H"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:54" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC9-Zv-sA3">
                                                 <rect key="frame" x="163.5" y="12" width="47" height="21"/>
@@ -124,7 +127,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Inm-n0-ygd" firstAttribute="trailing" secondItem="Iut-hJ-qHT" secondAttribute="trailingMargin" constant="8" id="RJf-di-Fh6"/>
                                             <constraint firstItem="Inm-n0-ygd" firstAttribute="centerY" secondItem="QC9-Zv-sA3" secondAttribute="centerY" id="SFK-ch-WAb"/>
@@ -133,7 +136,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="AuG-4P-OhA"/>
                                     <constraint firstItem="Iut-hJ-qHT" firstAttribute="top" secondItem="ce8-SP-fMb" secondAttribute="bottom" id="Ple-n9-Dsy"/>
@@ -164,7 +167,7 @@
                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="FRM-xN-nnF" firstAttribute="centerX" secondItem="49O-vs-C2r" secondAttribute="centerX" id="769-ha-fTl"/>
                                     <constraint firstItem="CiA-ES-uAb" firstAttribute="centerX" secondItem="FRM-xN-nnF" secondAttribute="centerX" id="DNK-kf-ImW"/>
@@ -197,6 +200,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pM8-5k-S9k"/>
                     </view>
+                    <connections>
+                        <outlet property="awayPlayer1View" destination="FRM-xN-nnF" id="Ik7-Fw-W2z"/>
+                        <outlet property="awayPlayer2View" destination="CiA-ES-uAb" id="uUj-DM-obm"/>
+                        <outlet property="awayPlayer3View" destination="ifb-6F-JI9" id="dVs-6H-Im8"/>
+                        <outlet property="awayTeamNameLabel" destination="8Md-hg-fdh" id="vZa-RN-yId"/>
+                        <outlet property="homePlayer1View" destination="6fd-5z-6u2" id="AnQ-uN-57t"/>
+                        <outlet property="homePlayer2View" destination="749-hW-rb1" id="jsc-Q4-6qz"/>
+                        <outlet property="homePlayer3View" destination="LuT-JE-ABa" id="iu9-mU-1fC"/>
+                        <outlet property="homeTeamNameLabel" destination="xHO-ev-OD7" id="Yne-Do-1h4"/>
+                        <outlet property="pauseButton" destination="Inm-n0-ygd" id="9wJ-c9-9F3"/>
+                        <outlet property="scoreLabel" destination="Kwh-RX-mrX" id="StO-U3-07f"/>
+                        <outlet property="timeLabel" destination="QC9-Zv-sA3" id="RO1-Xf-XpT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUK-P1-BX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

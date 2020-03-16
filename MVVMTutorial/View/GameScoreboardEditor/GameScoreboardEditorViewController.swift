@@ -26,6 +26,13 @@ class GameScoreboardEditorViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     
+    // ViewModel 데이터를 View 자체에 연결 - viewDidLoad() 전에 할당해야 함.
+    var viewModel: GameScoreboardEditorViewModel? {
+        didSet {
+            fillUI()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +43,7 @@ class GameScoreboardEditorViewController: UIViewController {
     // MARK: Button Action
     
     @IBAction func pauseButtonPress(_ sender: AnyObject) {
-        
+        viewModel?.togglePause()
     }
     
     // MARK: Private
@@ -49,8 +56,26 @@ class GameScoreboardEditorViewController: UIViewController {
         self.timeLabel.textColor = UIColor.textColor
     }
     
+    // UI를 데이터로 채우는 곳 - 데이터를 제공해야 함. ViewModel 객체로 이것을 수행
     fileprivate func fillUI() {
+        if !isViewLoaded {
+            return
+        }
         
+        guard let viewModel = viewModel else {
+            return
+        }
+        
+        // we are sure here that we have all the setup done
+        
+        self.homeTeamNameLabel.text = viewModel.homeTeam
+        self.awayTeamNameLabel.text = viewModel.awayTeam
+        
+        self.scoreLabel.text = viewModel.score
+        self.timeLabel.text = viewModel.time
+        
+        let title: String = viewModel.isPaused ? "Start" : "Pause"
+        self.pauseButton.setTitle(title, for: .normal)
     }
     
 }
