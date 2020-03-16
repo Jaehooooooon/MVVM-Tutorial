@@ -40,6 +40,10 @@ class GameScoreboardEditorViewModelFromGame: NSObject, GameScoreboardEditorViewM
         self.isPaused = !isPaused
     }
     
+    // 추가
+    let homePlayers: [PlayerScoreboardMoveEditorViewModel]
+    let awayPlayers: [PlayerScoreboardMoveEditorViewModel]
+    
     // MARK: Init
     
     init(withGame game: Game) {
@@ -52,6 +56,10 @@ class GameScoreboardEditorViewModelFromGame: NSObject, GameScoreboardEditorViewM
         self.score = GameScoreboardEditorViewModelFromGame.scorePretty(for: game)
         self.isFinished = game.isFinished
         self.isPaused = true
+        
+        // 추가
+        self.homePlayers = GameScoreboardEditorViewModelFromGame.playerViewModels(from: game.homeTeam.players, game: game)
+        self.awayPlayers = GameScoreboardEditorViewModelFromGame.playerViewModels(from: game.awayTeam.players, game: game)
     }
     
     // MARK: Private
@@ -90,4 +98,14 @@ class GameScoreboardEditorViewModelFromGame: NSObject, GameScoreboardEditorViewM
         return String(format: "\(game.homeTeamScore) - \(game.awayTeamScore)")
     }
     
+    // MARK: Private Init
+
+    fileprivate static func playerViewModels(from players: [Player], game: Game) -> [PlayerScoreboardMoveEditorViewModel] {
+        var playerViewModels: [PlayerScoreboardMoveEditorViewModel] = [PlayerScoreboardMoveEditorViewModel]()
+        for player in players {
+            playerViewModels.append(PlayerScoreboardMoveEditorViewModelFromPlayer(withGame: game, player: player))
+        }
+        
+        return playerViewModels
+    }
 }

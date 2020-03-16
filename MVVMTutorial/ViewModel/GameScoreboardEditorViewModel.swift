@@ -17,4 +17,8 @@ protocol GameScoreboardEditorViewModel {
     
     var isPaused: Bool { get }
     func togglePause()
+    
+    // 추가
+    var homePlayers: [PlayerScoreboardMoveEditorViewModel] { get }
+    var awayPlayers: [PlayerScoreboardMoveEditorViewModel] { get }
 }
