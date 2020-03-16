@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
         if !self.isViewLoaded {
             return
         }
-        
+    
         guard let gameLibrary = gameLibrary else {
             return
         }

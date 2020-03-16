@@ -58,6 +58,7 @@ class GameScoreboardEditorViewController: UIViewController {
     
     // UI를 데이터로 채우는 곳 - 데이터를 제공해야 함. ViewModel 객체로 이것을 수행
     fileprivate func fillUI() {
+        
         if !isViewLoaded {
             return
         }
