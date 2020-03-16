@@ -41,7 +41,38 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX5-Iq-5gr">
                                 <rect key="frame" x="20" y="44" width="374" height="343"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuT-JE-ABa" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMTutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="283" width="374" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="M2s-9C-kBR"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="749-hW-rb1" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMTutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="215" width="374" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fd-5z-6u2" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMTutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="147" width="374" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="LuT-JE-ABa" secondAttribute="trailing" id="0mN-Is-HmO"/>
+                                    <constraint firstItem="LuT-JE-ABa" firstAttribute="leading" secondItem="QX5-Iq-5gr" secondAttribute="leading" id="7mN-iX-dSz"/>
+                                    <constraint firstItem="749-hW-rb1" firstAttribute="centerX" secondItem="LuT-JE-ABa" secondAttribute="centerX" id="82P-Od-N9X"/>
+                                    <constraint firstItem="6fd-5z-6u2" firstAttribute="width" secondItem="LuT-JE-ABa" secondAttribute="width" id="9Ts-WG-ejm"/>
+                                    <constraint firstItem="749-hW-rb1" firstAttribute="width" secondItem="LuT-JE-ABa" secondAttribute="width" id="BzM-Hs-mpN"/>
+                                    <constraint firstItem="6fd-5z-6u2" firstAttribute="centerX" secondItem="LuT-JE-ABa" secondAttribute="centerX" id="C0z-Zv-1U4"/>
+                                    <constraint firstItem="749-hW-rb1" firstAttribute="top" secondItem="6fd-5z-6u2" secondAttribute="bottom" constant="8" id="Iav-m8-jg3"/>
+                                    <constraint firstAttribute="bottom" secondItem="LuT-JE-ABa" secondAttribute="bottom" id="Oci-Dd-bwA"/>
+                                    <constraint firstItem="6fd-5z-6u2" firstAttribute="height" secondItem="LuT-JE-ABa" secondAttribute="height" id="Qo8-lF-qYZ"/>
+                                    <constraint firstItem="LuT-JE-ABa" firstAttribute="centerX" secondItem="QX5-Iq-5gr" secondAttribute="centerX" id="uwr-a3-cqs"/>
+                                    <constraint firstItem="749-hW-rb1" firstAttribute="height" secondItem="LuT-JE-ABa" secondAttribute="height" id="vCL-bR-NCZ"/>
+                                    <constraint firstItem="LuT-JE-ABa" firstAttribute="top" secondItem="749-hW-rb1" secondAttribute="bottom" constant="8" id="wGM-g4-ZeP"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7o-q7-mBL">
                                 <rect key="frame" x="20" y="403" width="374" height="90"/>
@@ -116,7 +147,38 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49O-vs-C2r">
                                 <rect key="frame" x="20" y="515" width="374" height="347"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRM-xN-nnF" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMTutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ZIp-Ea-2Jn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CiA-ES-uAb" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMTutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="374" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifb-6F-JI9" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMTutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="136" width="374" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="FRM-xN-nnF" firstAttribute="centerX" secondItem="49O-vs-C2r" secondAttribute="centerX" id="769-ha-fTl"/>
+                                    <constraint firstItem="CiA-ES-uAb" firstAttribute="centerX" secondItem="FRM-xN-nnF" secondAttribute="centerX" id="DNK-kf-ImW"/>
+                                    <constraint firstItem="ifb-6F-JI9" firstAttribute="height" secondItem="FRM-xN-nnF" secondAttribute="height" id="F2E-UF-HPo"/>
+                                    <constraint firstItem="FRM-xN-nnF" firstAttribute="leading" secondItem="49O-vs-C2r" secondAttribute="leading" id="F9n-jj-Wpa"/>
+                                    <constraint firstItem="CiA-ES-uAb" firstAttribute="height" secondItem="FRM-xN-nnF" secondAttribute="height" id="KPB-fP-ObO"/>
+                                    <constraint firstItem="ifb-6F-JI9" firstAttribute="width" secondItem="FRM-xN-nnF" secondAttribute="width" id="Oan-LW-wp3"/>
+                                    <constraint firstItem="ifb-6F-JI9" firstAttribute="top" secondItem="CiA-ES-uAb" secondAttribute="bottom" constant="8" id="Wd7-ry-wHO"/>
+                                    <constraint firstItem="CiA-ES-uAb" firstAttribute="top" secondItem="FRM-xN-nnF" secondAttribute="bottom" constant="8" id="WhE-hW-WwF"/>
+                                    <constraint firstItem="FRM-xN-nnF" firstAttribute="top" secondItem="49O-vs-C2r" secondAttribute="top" id="Ypi-se-e64"/>
+                                    <constraint firstItem="CiA-ES-uAb" firstAttribute="width" secondItem="FRM-xN-nnF" secondAttribute="width" id="kBq-y8-Q9f"/>
+                                    <constraint firstItem="ifb-6F-JI9" firstAttribute="centerX" secondItem="FRM-xN-nnF" secondAttribute="centerX" id="nLJ-Dq-eN2"/>
+                                    <constraint firstAttribute="trailing" secondItem="FRM-xN-nnF" secondAttribute="trailing" id="s31-R7-XlT"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

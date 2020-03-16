@@ -19,6 +19,7 @@
 		3873C8C8241E4B980046D5E3 /* UIViewController+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8C7241E4B980046D5E3 /* UIViewController+Subview.swift */; };
 		3873C8CA241E4BE20046D5E3 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8C9241E4BE20046D5E3 /* UIColor+Theme.swift */; };
 		3873C8CC241E4C090046D5E3 /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8CB241E4C090046D5E3 /* NSTimer+Closure.swift */; };
+		3873C8CE241F13950046D5E3 /* PlayerScoreboardMoveEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3873C8CD241F13950046D5E3 /* PlayerScoreboardMoveEditorView.xib */; };
 		38AB1B3A241D132F00FB2CE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AB1B39241D132F00FB2CE7 /* AppDelegate.swift */; };
 		38AB1B3C241D132F00FB2CE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AB1B3B241D132F00FB2CE7 /* SceneDelegate.swift */; };
 		38AB1B41241D132F00FB2CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AB1B3F241D132F00FB2CE7 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		3873C8C7241E4B980046D5E3 /* UIViewController+Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Subview.swift"; sourceTree = "<group>"; };
 		3873C8C9241E4BE20046D5E3 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		3873C8CB241E4C090046D5E3 /* NSTimer+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTimer+Closure.swift"; sourceTree = "<group>"; };
+		3873C8CD241F13950046D5E3 /* PlayerScoreboardMoveEditorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerScoreboardMoveEditorView.xib; sourceTree = "<group>"; };
 		38AB1B36241D132F00FB2CE7 /* MVVMTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AB1B39241D132F00FB2CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38AB1B3B241D132F00FB2CE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				3873C8C1241E4A070046D5E3 /* GameScoreboardEditorViewController.swift */,
 				3873C8C3241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift */,
+				3873C8CD241F13950046D5E3 /* PlayerScoreboardMoveEditorView.xib */,
 			);
 			path = GameScoreboardEditor;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38AB1B49241D133200FB2CE7 /* LaunchScreen.storyboard in Resources */,
+				3873C8CE241F13950046D5E3 /* PlayerScoreboardMoveEditorView.xib in Resources */,
 				38AB1B46241D133200FB2CE7 /* Assets.xcassets in Resources */,
 				38AB1B41241D132F00FB2CE7 /* Main.storyboard in Resources */,
 			);
