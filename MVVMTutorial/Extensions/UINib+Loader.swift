@@ -15,7 +15,7 @@ fileprivate extension UINib {
     }
     
     static func loadSingleView(_ nibName: String, owner: Any?) -> UIView {
-        return nib(named: nibName).instantiate(withOwner: owner, options: nil)[0] as! UIView
+        return UINib(nibName: nibName, bundle: nil).instantiate(withOwner: owner, options: nil)[0] as! UIView
     }
 }
 

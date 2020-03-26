@@ -25,6 +25,13 @@ class PlayerScoreboardMoveEditorView: UIView {
     
     fileprivate weak var playerNibView: UIView!
     
+    // 추가
+    var viewModel: PlayerScoreboardMoveEditorViewModel? {
+        didSet {
+            fillUI()
+        }
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -34,6 +41,16 @@ class PlayerScoreboardMoveEditorView: UIView {
         
         styleUI()
     }
+    
+//    class func instanceFromNib() -> UIView {
+//        return UINib(nibName: "PlayerScoreboardMoveEditorView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
+//    }
+    
+//    override class func awakeFromNib() {
+//        let playerView = PlayerScoreboardMoveEditorView.instanceFromNib
+//
+//
+//    }
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -88,7 +105,17 @@ class PlayerScoreboardMoveEditorView: UIView {
     }
     
     fileprivate func fillUI() {
+        guard let viewModel = viewModel else {
+            return
+        }
         
+        self.name.text = viewModel.playerName
+        
+        self.onePointCountLabel.text = viewModel.onePointMoveCount
+        self.twoPointCountLabel.text = viewModel.twoPointMoveCount
+        self.assistCountLabel.text = viewModel.assistMoveCount
+        self.reboundCountLabel.text = viewModel.reboundMoveCount
+        self.foulCountLabel.text = viewModel.foulMoveCount
     }
     
 }

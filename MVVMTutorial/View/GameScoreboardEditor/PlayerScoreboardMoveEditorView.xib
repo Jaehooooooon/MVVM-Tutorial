@@ -7,7 +7,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMTutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="assistButton" destination="L7J-hI-E0h" id="a83-wX-fbY"/>
+                <outlet property="assistCountLabel" destination="NdR-HO-wkG" id="w5Q-R6-yiK"/>
+                <outlet property="foulButton" destination="RrF-gE-B1Y" id="Dpc-Mh-KUF"/>
+                <outlet property="foulCountLabel" destination="gZk-48-3lK" id="XMe-rO-F0z"/>
+                <outlet property="name" destination="Xwz-cJ-J64" id="JZ8-w1-7Md"/>
+                <outlet property="onePointButton" destination="KTD-oX-rjS" id="VXw-yd-FdW"/>
+                <outlet property="onePointCountLabel" destination="GsS-y8-ESG" id="D2y-If-oFR"/>
+                <outlet property="reboundButton" destination="gY3-8B-sG2" id="Udd-6W-PAP"/>
+                <outlet property="reboundCountLabel" destination="FnZ-n2-wJS" id="rbx-gx-GlJ"/>
+                <outlet property="twoPointCountLabel" destination="Fe4-eb-CFo" id="LC8-O9-5b7"/>
+                <outlet property="twoPointsButton" destination="DRG-nQ-ZJ7" id="4ue-Gj-fG6"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="Lbg-9p-762">
             <rect key="frame" x="0.0" y="0.0" width="371" height="74"/>
@@ -43,12 +57,18 @@
                             <state key="normal" title="1">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="onePointAction:" destination="-1" eventType="touchUpInside" id="2Np-ns-xXZ"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRG-nQ-ZJ7" userLabel="Move - 2">
                             <rect key="frame" x="70.5" y="12" width="40" height="40"/>
                             <state key="normal" title="2">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="twoPointsAction:" destination="-1" eventType="touchUpInside" id="lQV-Nd-20C"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7J-hI-E0h" userLabel="Move - Assist">
                             <rect key="frame" x="130.5" y="12" width="40" height="40"/>
@@ -56,18 +76,27 @@
                             <state key="normal" title="Assist">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="assistAction:" destination="-1" eventType="touchUpInside" id="4d2-I1-h5P"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY3-8B-sG2" userLabel="Move - Rebound">
                             <rect key="frame" x="190.5" y="12" width="40" height="40"/>
                             <state key="normal" title="Rbnd">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="reboundAction:" destination="-1" eventType="touchUpInside" id="HKO-w6-i04"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrF-gE-B1Y" userLabel="Move - Foul">
                             <rect key="frame" x="251" y="12" width="40" height="40"/>
                             <state key="normal" title="Foul">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="foulAction:" destination="-1" eventType="touchUpInside" id="GlN-TE-saC"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsS-y8-ESG" userLabel="1 - count Label">
                             <rect key="frame" x="16.5" y="52" width="27" height="12"/>
