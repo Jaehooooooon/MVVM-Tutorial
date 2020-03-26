@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385698A8242CEAFE003CB12E /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385698A7242CEAFE003CB12E /* Dynamic.swift */; };
 		3873C8B5241E48D40046D5E3 /* GameLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8B4241E48D40046D5E3 /* GameLibrary.swift */; };
 		3873C8B7241E48F50046D5E3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8B6241E48F50046D5E3 /* Game.swift */; };
 		3873C8B9241E49140046D5E3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873C8B8241E49140046D5E3 /* Player.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		385698A7242CEAFE003CB12E /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		3873C8B4241E48D40046D5E3 /* GameLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLibrary.swift; sourceTree = "<group>"; };
 		3873C8B6241E48F50046D5E3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3873C8B8241E49140046D5E3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				38AE6A69241FAECE00DC7443 /* GameScoreboardEditorViewModelFromGame.swift */,
 				38AE6A6B241FBC5800DC7443 /* PlayerScoreboardMoveEditorViewModel.swift */,
 				38AE6A6D241FBC8100DC7443 /* PlayerScoreboardMoveEditorViewModelFromPlayer.swift */,
+				385698A7242CEAFE003CB12E /* Dynamic.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				3873C8CA241E4BE20046D5E3 /* UIColor+Theme.swift in Sources */,
 				38AE6A6A241FAECE00DC7443 /* GameScoreboardEditorViewModelFromGame.swift in Sources */,
 				38AE6A6E241FBC8100DC7443 /* PlayerScoreboardMoveEditorViewModelFromPlayer.swift in Sources */,
+				385698A8242CEAFE003CB12E /* Dynamic.swift in Sources */,
 				3873C8C8241E4B980046D5E3 /* UIViewController+Subview.swift in Sources */,
 				38AB1B3A241D132F00FB2CE7 /* AppDelegate.swift in Sources */,
 				3873C8C4241E4A4B0046D5E3 /* PlayerScoreboardMoveEditorView.swift in Sources */,

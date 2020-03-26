@@ -42,16 +42,6 @@ class PlayerScoreboardMoveEditorView: UIView {
         styleUI()
     }
     
-//    class func instanceFromNib() -> UIView {
-//        return UINib(nibName: "PlayerScoreboardMoveEditorView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
-//    }
-    
-//    override class func awakeFromNib() {
-//        let playerView = PlayerScoreboardMoveEditorView.instanceFromNib
-//
-//
-//    }
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         playerNibView.frame = self.bounds
