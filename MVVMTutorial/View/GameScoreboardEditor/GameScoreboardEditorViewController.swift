@@ -73,7 +73,7 @@ class GameScoreboardEditorViewController: UIViewController {
         viewModel.time.bindAndFire { [unowned self] in self.timeLabel.text = $0 }
         
         viewModel.isFinished.bindAndFire { [unowned self] in
-            if $0 {
+            if $0 { //여기서 $0은 isFinished
                 self.homePlayer1View.isHidden = true
                 self.homePlayer2View.isHidden = true
                 self.homePlayer3View.isHidden = true
@@ -81,6 +81,8 @@ class GameScoreboardEditorViewController: UIViewController {
                 self.awayPlayer1View.isHidden = true
                 self.awayPlayer2View.isHidden = true
                 self.awayPlayer3View.isHidden = true
+                
+                viewModel.togglePause()
             }
         }
         
